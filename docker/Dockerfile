@@ -15,4 +15,9 @@ ENV PATH $PATH:/usr/local/gcloud/google-cloud-sdk/bin
 ENV PATH $PATH:/usr/local/gcloud/google-cloud-sdk/bin
 ADD package/config/key.json /pwd/gcp/credentials.json
 ENV GOOGLE_APPLICATION_CREDENTIALS "/pwd/gcp/credentials.json"
+
+
 WORKDIR /app
+COPY package .
+
+ENTRYPOINT [ "sh" ]
