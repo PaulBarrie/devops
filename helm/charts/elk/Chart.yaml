@@ -1,0 +1,22 @@
+apiVersion: v2
+appVersion: 1.16.0
+dependencies:
+- alias: es-master
+  name: elasticsearch
+  repository: https://helm.elastic.co
+  version: 7.13.4
+- alias: es-data
+  name: elasticsearch
+  repository: https://helm.elastic.co
+  version: 7.13.4
+- alias: es-client
+  name: elasticsearch
+  repository: https://helm.elastic.co
+  version: 7.13.4
+- name: kibana
+  repository: https://helm.elastic.co
+  version: 7.13.4
+description: A Helm chart for Kubernetes
+name: elk
+type: application
+version: 1.16.0
