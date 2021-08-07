@@ -1,0 +1,13 @@
+- name: "node-pool1"
+  vm_size: "Standard_DS2_v2"
+  tags: 
+    Environment: "Production"
+  node_count: 1 #
+  enable_auto_scaling: true
+  os_type: Linux # Windows
+  min_count: 1
+  max_count: 3
+  max_pods: 3
+  node_taints:
+    - "size=standard:NoSchedule" 
+

@@ -29,7 +29,7 @@ variable "region" {
 variable "node_pool_conf_file" {
   description = "The yaml file containing node pool confs"
   type = string
-  default = "../config/node_pools.yaml"
+  default = "../config/gcp-node-pools.yaml"
 }
 
 variable "initial_node_count" {
@@ -40,8 +40,10 @@ variable "machine_type" {
   default = "n1-standard-1"
 }
 
-
-# ---------------------------------------------------------------------------------------------------------------------
+variable "sa_users" {
+  type = list(string)
+  default = []  
+}
 # OPTIONAL PARAMETERS
 # These parameters have reasonable defaults.
 # ---------------------------------------------------------------------------------------------------------------------

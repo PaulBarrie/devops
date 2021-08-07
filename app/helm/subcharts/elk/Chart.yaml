@@ -23,9 +23,9 @@ version: 1.16.0
 # It is recommended to use it with quotes.
 appVersion: "1.16.0"
 dependencies:
-    # - name: elastic/eck-operator
-    #   repository: https://helm.elastic.co/elastic/
-    #   version: 1.6.0
+    - name: bitnami/logstash
+      repository: https://charts.bitnami.com/bitnami
+      version: 1.6.0
     - name: elasticsearch
       repository: https://helm.elastic.co
       version: 7.13.4
